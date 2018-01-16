@@ -46,7 +46,9 @@
     <Compile Include="AverageStudent.cs" />
     <Compile Include="BadStudent.cs" />
     <Compile Include="BestStudent.cs" />
+    <Compile Include="FactoryStudent.cs" />
     <Compile Include="ForeignStudent.cs" />
+    <Compile Include="IFactoryStudent.cs" />
     <Compile Include="IStudent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

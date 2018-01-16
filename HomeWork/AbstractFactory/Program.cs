@@ -10,13 +10,11 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            IStudent student_1 = new BestStudent();
-            var obj_1 = student_1.WhoIsI();
-            Console.WriteLine(obj_1);
-
-            IStudent student_2 = new BadStudent();
-            var obj_2 = student_2.WhoIsI();
-            Console.WriteLine(obj_2);
+            var factory = new FactoryStudent();
+            var student_1 = factory.CreateStudent(5, "Belarus");
+            Console.WriteLine(student_1.WhoIsI());
+            var student_2 = factory.CreateStudent(5, "Iran");
+            Console.WriteLine(student_2.WhoIsI());
 
             Console.ReadLine();
         }
