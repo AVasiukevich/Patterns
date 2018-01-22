@@ -12,6 +12,6 @@ namespace Decorator
         decimal Price { get; set; }
         int Code { get; set; }
 
-        void Print();
+        string Print();
     }
 }

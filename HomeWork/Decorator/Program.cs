@@ -11,12 +11,12 @@ namespace Decorator
         static void Main(string[] args)
         {
             var product = new Product() { Name = "Молоко", Code = 1234, Price = 1.3M };
-            product.Print();
+            Console.WriteLine(product.Print());
 
             var productRUB = new ProductRUB(product, 3.47M);
-            productRUB.Print();
+            Console.WriteLine(productRUB.Print());
             var productUSD = new ProductUSD(product, 1.9M);
-            productUSD.Print();
+            Console.WriteLine(productUSD.Print());
 
             Console.ReadLine();
         }

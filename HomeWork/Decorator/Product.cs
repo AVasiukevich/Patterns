@@ -12,9 +12,9 @@ namespace Decorator
         public string Name { get; set; }
         public decimal Price { get; set; }
 
-        public void Print()
+        public string Print()
         {
-            Console.WriteLine($"Товар с артикулом {Code}, именем {Name} и ценой {Price}");
+            return String.Format($"Товар с артикулом {Code}, именем {Name} и ценой {Price}");
         }
     }
 }

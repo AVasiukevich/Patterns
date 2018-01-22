@@ -13,10 +13,9 @@ namespace Decorator
         {
             _rate = rate;
         }
-        public override void Print()
+        public override string Print()
         {
-            base.Print();
-            Console.WriteLine($"{base.Price / _rate} USD");
+            return base.Print() + String.Format($"{base.Price / _rate} USD");
         }
     }
 }

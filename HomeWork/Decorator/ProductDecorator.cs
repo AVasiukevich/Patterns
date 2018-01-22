@@ -19,9 +19,9 @@ namespace Decorator
         public virtual string Name { get; set; }
         public virtual decimal Price { get; set; }
 
-        public virtual void Print()
+        public virtual string Print()
         {
-            Console.Write($"Товар с артикулом {_product.Code}, именем {_product.Name} и ценой ");
+            return String.Format($"Товар с артикулом {_product.Code}, именем {_product.Name} и ценой ");
         }
     }
 }
