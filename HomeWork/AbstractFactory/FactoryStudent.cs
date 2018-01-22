@@ -10,7 +10,7 @@ namespace AbstractFactory
     {
         public IStudent CreateStudent(int rating, string country)
         {
-            if (country.Equals("Belarus"))
+            if (!country.Equals("Belarus"))
                 return new ForeignStudent();
             else
             {

@@ -8,6 +8,6 @@ namespace AbstractFactory
 {
     interface IStudent
     {
-        string WhoIsI();
+        string WhoAmI();
     }
 }

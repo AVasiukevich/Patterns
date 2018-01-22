@@ -12,9 +12,9 @@ namespace AbstractFactory
         {
             var factory = new FactoryStudent();
             var student_1 = factory.CreateStudent(5, "Belarus");
-            Console.WriteLine(student_1.WhoIsI());
+            Console.WriteLine(student_1.WhoAmI());
             var student_2 = factory.CreateStudent(5, "Iran");
-            Console.WriteLine(student_2.WhoIsI());
+            Console.WriteLine(student_2.WhoAmI());
 
             Console.ReadLine();
         }

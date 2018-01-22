@@ -8,7 +8,7 @@ namespace AbstractFactory
 {
     class BestStudent : IStudent
     {
-        public string WhoIsI()
+        public string WhoAmI()
         {
             return "I am BestStudent!";
         }

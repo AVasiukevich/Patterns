@@ -8,7 +8,7 @@ namespace AbstractFactory
 {
     class ForeignStudent : IStudent
     {
-        public string WhoIsI()
+        public string WhoAmI()
         {
             return "I am ForeignStudent!";
         }
