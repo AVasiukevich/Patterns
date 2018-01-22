@@ -9,7 +9,7 @@ namespace Composite
 {
     class Document : IXmlElements
     {
-        private List<IXmlElements> _list = new List<IXmlElements>();
+        private IList<IXmlElements> _list = new List<IXmlElements>();
         public string Name { get; set; }
         public string Value { get; set; }
 
