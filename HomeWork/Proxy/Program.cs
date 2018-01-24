@@ -10,6 +10,10 @@ namespace Proxy
     {
         static void Main(string[] args)
         {
+            var counter = new ProxyLettersCounter("Abc bcca aaa bbb ccc");
+            counter.SumLetters('a');
+            counter.SumLetters('c');
+            Console.ReadLine();
         }
     }
 }
