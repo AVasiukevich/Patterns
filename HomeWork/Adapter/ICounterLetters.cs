@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Adapter
 {
-    interface ICounterLetters
+    public interface ICounterLetters
     {
         void SumLetters(char letter);
     }
