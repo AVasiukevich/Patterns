@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{7A049491-837C-4ABB-8DF7-0E1D9309D8DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Façade", "Façade\Façade.csproj", "{B4A510B5-EE0B-44F2-BDB0-1666A813F188}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Façade", "Façade\Façade.csproj", "{4503DC2D-4079-49A2-9DE1-A68280680143}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight", "Flyweight\Flyweight.csproj", "{2FE7D4A3-A622-4A3D-BF28-BDC1BD5B5A09}"
 EndProject
@@ -53,10 +53,10 @@ Global
 		{7A049491-837C-4ABB-8DF7-0E1D9309D8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A049491-837C-4ABB-8DF7-0E1D9309D8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A049491-837C-4ABB-8DF7-0E1D9309D8DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B4A510B5-EE0B-44F2-BDB0-1666A813F188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4A510B5-EE0B-44F2-BDB0-1666A813F188}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4A510B5-EE0B-44F2-BDB0-1666A813F188}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4A510B5-EE0B-44F2-BDB0-1666A813F188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4503DC2D-4079-49A2-9DE1-A68280680143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4503DC2D-4079-49A2-9DE1-A68280680143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4503DC2D-4079-49A2-9DE1-A68280680143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4503DC2D-4079-49A2-9DE1-A68280680143}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
