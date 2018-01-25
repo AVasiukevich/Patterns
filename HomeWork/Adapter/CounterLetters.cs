@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Adapter
 {
-    class CounterLetters : ICounterLetters
+    public class CounterLetters : ICounterLetters
     {
         private string _string = String.Empty;
         public CounterLetters(string str)
