@@ -13,13 +13,12 @@ namespace Task_4
 {
     public partial class MainForm : Form
     {
-        //private BitmapPool _images;
-        private BitmapAdapter a;
-        private IList<Bitmap> _listImage = new List<Bitmap>();
+        private BitmapPool _images;
+
         public MainForm()
         {
             InitializeComponent();
-            //_images = new BitmapPool(3);
+            _images = new BitmapPool(3);
         }
 
         private void btn_open_Click(object sender, EventArgs e)
@@ -30,28 +29,24 @@ namespace Task_4
 
             if (openFile.ShowDialog() == DialogResult.OK)
             {
-                //_images.AddPool(new Bitmap(openFile.FileName));
-                a = new BitmapAdapter(new Bitmap(openFile.FileName));
-                pct_main.Image = a.Image;
+                pct_main.ImageLocation = openFile.FileName;
+                _images.AddPool(new Bitmap(openFile.FileName));
             }
-            _listImage.Add(a.TurnLeft());
-            //_listImage.Add(a.GetNegative());
-            _listImage.Add(a.TurnRight());
         }
 
         private void btn_negative_Click(object sender, EventArgs e)
         {   
-            pct_main.Image = a.TurnLeft();
+            pct_main.Image = _images.GetImages(0);
         }
 
         private void btn_left_Click(object sender, EventArgs e)
         {
-            pct_main.Image = _listImage[1];
+            pct_main.Image = _images.GetImages(1);
         }
 
         private void btn_right_Click(object sender, EventArgs e)
         {
-            pct_main.Image = _listImage[2];
+            pct_main.Image = _images.GetImages(2);
         }
 
         private void btn_save_Click(object sender, EventArgs e)

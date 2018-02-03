@@ -21,17 +21,18 @@ namespace Task_4
         }
         public Bitmap GetNegative()
         {
+            var tmp_image = new Bitmap(_image);
             Color c;
-            for (int i = 0; i < _image.Width; i++)
+            for (int i = 0; i < tmp_image.Width; i++)
             {
-                for (int j = 0; j < _image.Height; j++)
+                for (int j = 0; j < tmp_image.Height; j++)
                 {
-                    c = _image.GetPixel(i, j);
+                    c = tmp_image.GetPixel(i, j);
                     c = Color.FromArgb(255 - c.R, 255 - c.G, 255 - c.B);
-                    _image.SetPixel(i, j, c);
+                    tmp_image.SetPixel(i, j, c);
                 }
             }
-            return _image;
+            return tmp_image;
         }
 
         public void Save(string path)
@@ -41,14 +42,16 @@ namespace Task_4
 
         public Bitmap TurnLeft()
         {
-            _image.RotateFlip(RotateFlipType.Rotate90FlipXY);
-            return _image;
+            var tmp_image = new Bitmap(_image);
+            tmp_image.RotateFlip(RotateFlipType.Rotate90FlipXY);
+            return tmp_image;
         }
 
         public Bitmap TurnRight()
         {
-            _image.RotateFlip(RotateFlipType.Rotate270FlipXY);
-            return _image;
+            var tmp_image = new Bitmap(_image);
+            tmp_image.RotateFlip(RotateFlipType.Rotate270FlipXY);
+            return tmp_image;
         }
     }
 }

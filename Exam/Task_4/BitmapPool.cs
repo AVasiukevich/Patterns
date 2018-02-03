@@ -22,8 +22,8 @@ namespace Task_4
             adapter = new BitmapAdapter(image);
             if (_listImage.Count - 3 < _maxSize)
             {
-                _listImage.Add(adapter.TurnLeft());
                 _listImage.Add(adapter.GetNegative());
+                _listImage.Add(adapter.TurnLeft());
                 _listImage.Add(adapter.TurnRight());
             }
             else
