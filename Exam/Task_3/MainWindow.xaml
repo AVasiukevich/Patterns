@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border Grid.RowSpan="2" Grid.ColumnSpan="2" BorderBrush="Gray" BorderThickness="1">
+            <Canvas x:Name="can_main" MouseUp="can_main_MouseUp" Background="Transparent"></Canvas>
+        </Border>
+        <Button Grid.Column="2" Content="Стереть" Margin="5"></Button>
+        <TextBlock x:Name="tbl_pos_x" Grid.Row="2" Margin="5"></TextBlock>
+        <TextBlock x:Name="tbl_pos_y" Grid.Row="2" Grid.Column="1" Margin="5"></TextBlock>
     </Grid>
 </Window>
