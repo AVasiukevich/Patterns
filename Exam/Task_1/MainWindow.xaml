@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:Task_1"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid x:Name="grid_main">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Путь: " Margin="5"></TextBlock>
+        <TextBox x:Name="tb_path" Grid.Column="1" Margin="5" Text="1.wav"></TextBox>
+        <Button Grid.Column="2" Content="Открыть" Margin="5" Click="Button_Click" ></Button>
+        <TextBlock x:Name="tbl_state" Grid.Row="1" Grid.ColumnSpan="2" Margin="5"></TextBlock>
+        <TextBlock x:Name="tbl_save" Grid.Row="2" Margin="5" Text="Сохранить в:" Visibility="Hidden"></TextBlock>
+        <TextBox x:Name="tb_save" Grid.Row="2" Grid.Column="1" Margin="5" Visibility="Hidden" Text="1_save.wav"></TextBox>
+        <Button x:Name="btn_play" Grid.Row="1" Grid.Column="2" Margin="5" Content="Запустить" Click="Button_Click_1" Visibility="Hidden" ></Button>
+        <Button x:Name="btn_save" Grid.Row="2" Grid.Column="2" Margin="5" Content="Сохранить" Visibility="Hidden" Click="btn_save_Click" ></Button>
     </Grid>
 </Window>
