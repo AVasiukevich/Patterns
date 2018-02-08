@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HtmlElement.cs" />
+    <Compile Include="HtmlPage.cs" />
+    <Compile Include="HtnlSection.cs" />
+    <Compile Include="IHtmlElement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
